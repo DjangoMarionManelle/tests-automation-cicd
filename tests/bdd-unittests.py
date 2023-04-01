@@ -1,5 +1,5 @@
 import unittest
-from calculator import calculate   # Import the function we want to test
+from ..calculator import calculate
 
 
 class TestCalculate(unittest.TestCase):
