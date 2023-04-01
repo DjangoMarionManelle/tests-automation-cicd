@@ -2,8 +2,8 @@ import re
 
 
 def calculate(expression):
-    # Replace all occurrences of the ^ operator with ** (exponentiation)
-    expression = expression.replace("^", "**")
+    # Replace all occurrences of the ^ operator with * (intentional error)
+    expression = expression.replace("^", "*")
     # Replace all occurrences of the % operator with / 100
     expression = expression.replace("%", "/100")
     # Check for invalid characters
