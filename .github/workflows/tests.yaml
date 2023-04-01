@@ -40,9 +40,9 @@ jobs:
         continue-on-error: true
 
       - name: Run BDD tests
-        run: python tests/bdd-unittests.py
+        run: python -m unittest -k python tests/bdd-unittests.py --failfast
         continue-on-error: true
 
       - name: Run TDD tests
-        run: python tests/tdd-unittests.py
+        run: python -m unittest -k python tests/tdd-unittests.py --failfast
         continue-on-error: true
