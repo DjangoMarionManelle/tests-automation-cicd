@@ -33,16 +33,12 @@ jobs:
 
       - name: Upgrade pip
         run: python -m pip install --upgrade pip
-        continue-on-error: false
 
       - name: Install dependencies
         run: pip install -r requirements.txt
-        continue-on-error: false
 
       - name: Run BDD tests
         run: python -m unittest -k python tests/bdd-unittests.py --failfast
-        continue-on-error: false
 
       - name: Run TDD tests
         run: python -m unittest -k python tests/tdd-unittests.py --failfast
-        continue-on-error: false
