@@ -1,5 +1,10 @@
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import unittest
-from calculator import calculate   # Import the function we want to test
+from calculator import calculate
 
 
 class TestCalculate(unittest.TestCase):

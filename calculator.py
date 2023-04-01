@@ -1,5 +1,6 @@
 import re
 
+
 def calculate(expression):
     # Replace all occurrences of the ^ operator with ** (exponentiation)
     expression = expression.replace("^", "**")
@@ -31,6 +32,7 @@ def get_user_input():
     result = calculate(expression)
     # Print result
     print("Result:", result)
+
 
 if __name__ == '__main__':
     get_user_input()
