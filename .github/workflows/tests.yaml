@@ -35,7 +35,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run BDD tests
-        run: python bdd-unittests.py
+        run: python tests/bdd-unittests.py
 
       - name: Run TDD tests
-        run: python tdd-unittests.py
+        run: python tests/tdd-unittests.py
